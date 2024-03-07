@@ -1,17 +1,13 @@
 import React from "react";
 import Card from "./Card";
 
-const CardList = () => {
+const CardList = ({ list }) => {
   return (
     <div className="pt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
-
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
+      {list &&
+        list.map((item, index) => {
+          return <Card key={index} item={item}></Card>;
+        })}
     </div>
   );
 };

@@ -29,8 +29,8 @@ const Header = () => {
         <div className="navbar-end ">
           <label className="swap swap-rotate ">
             <input type="checkbox" onClick={handleTheme} />
-            <FaSun className="swap-on h-4 w-4 " />
-            <FaMoon className="swap-off h-4 w-4 " />
+            <FaMoon className="swap-on h-4 w-4 " />
+            <FaSun className="swap-off h-4 w-4 " />
           </label>
         </div>
       </div>
